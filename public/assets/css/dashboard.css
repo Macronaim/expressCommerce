@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+* {
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    background-color: #d3d1d1;
+    padding: 0px;
+}
+
+.hide-on-desktop {
+    display: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.nav-list {
+    margin-left: 10px;
+}
+
+.all-cards {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(5, 5, 5, 0.199);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.background-1 {
+    margin: 1vh;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(5, 5, 5, 0.199);
+    min-height: 98vh;
+    position: relative;
+    overflow: scroll;
+}
+
+.background-2 {
+    height: 98vh;
+    position: relative;
+}
+
+
+#side-bar {
+    background-color: white !important;
+    position: fixed;
+    min-height: 98vh;
+    width: 15%;
+    z-index: 1000;
+    border-radius: 30px 0 0px 30px;
+    padding: 10px;
+}
+
+.logo {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#side-bar ul {
+    padding-left: 0;
+}
+
+#side-bar ul li {
+    list-style: none;
+    color: gray;
+    transition: .7s;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#side-bar ul li:hover {
+    color: white;
+    background-color: #FF006E;
+
+}
+
+#side-bar ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: gray;
+    transition: .4s;
+
+}
+
+#side-bar ul li:hover a {
+    color: white;
+}
+
+#side-bar ul li i {
+    font-size: 20px;
+}
+
+.update {
+    text-transform: capitalize;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    position: relative;
+    padding: 50px 10px ;
+    margin-top: 30%;
+}
+
+.update img {
+    position: absolute;
+    bottom: 80%;
+    right: 30%;
+}
+
+.update button {
+    border: none;
+    background-color: #FF006E;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.logout {
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.logout a {
+    color: gray;
+    text-decoration: none;
+}
+
+.logout i {
+    padding-right: 20px;
+}
+
+.page-content {
+    background-color: #f7f2f2;
+    max-width: 100%;
+    margin-left: 15%;
+    overflow-y: hidden;
+    padding: 25px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+
+.dropDown i {
+    margin-right: 14px;
+    color: gray;
+    font-size: 23px;
+}
+
+.dashboard input {
+    border: none;
+    height: 30px;
+    width: 90%;
+}
+
+input::placeholder {
+    color: #CDCED0
+}
+
+.dashboard input:focus-visible {
+   outline: none;
+}
+
+.dashboard .input {
+    border: solid 1px #CDCED0;
+    background-color: white;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.dashboard .input i {
+    color: #CDCED0;
+}
+
+.dropDown img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.flex-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.up-cards {
+    padding: 10px 20px;
+
+}
+
+.metric-icon {
+    background-color: #FF006E;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.metrics {
+    text-transform: capitalize;
+    line-height: 3vh;
+}
+
+.metrics .hedear-card {
+    font-weight: 700;
+    color: gray;
+}
+
+
+.metrics .number-card {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.metrics span {
+    color: gray;
+    font-size: 15px;
+}
+
+.growth-pink {
+    background-color: #dd7e8762;
+    color: #dd7e88;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: max-content;
+}
+
+.growth-bleu {
+    background-color: #333bb159;
+    color: #333bb1f1;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: max-content;
+}
+
+.chart {
+    padding: 30px;
+}
+
+
+.about-chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-chart h3 {
+    font-weight: 600;
+}
+
+.about-chart span {
+    color: rgb(109, 128, 0);
+}
+
+.option-chart select {
+    color: gray;
+    text-transform: capitalize;
+}
+
+.option-chart select:focus-visible {
+    outline: 0;
+}
+
+.todays-orders {
+    padding: 30px 20px;
+    text-transform: capitalize;
+    /* height: 100%; */
+}
+
+.todays-orders img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.img-position {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.text-position {
+    width: 50%;
+}
+
+.text-position p {
+    font-weight: 700;
+}
+
+.text-position span {
+    font-weight: normal;
+    color: gray;
+    font-size: 14px;
+}
+
+.top-orders {
+    text-transform: capitalize;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+tbody, td, tr {
+    border: none !important;
+}
+
+tr {
+    height: 80px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.table img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.table-hedear {
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.monthly-orders {
+    padding: 10px 20px;
+}
+
+.monthly-hedear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.monthly-orders p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.monthly-orders i {
+    font-size: 20px;
+}
+
+.sales {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.blue-color, .pink-color {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.blue-color {
+    background-color: blue;
+}
+
+.pink-color {
+    background-color: rgb(247, 108, 131);
+}
+
+@media (max-width:800px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .hide-on-desktop {
+        display: block;
+    }
+
+    .dropDown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dashboard {
+        float: right;
+        width: 100%;
+    }
+
+    .logout {
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+    .icon-img img{
+        height: 30px;
+        margin-left: 8px;
+    }
+
+    #side-bar {
+        padding-top: 40px;
+    }
+
+    #side-bar ul li {
+        padding: 0;
+        margin-top: 19px;
+    }
+   
+}

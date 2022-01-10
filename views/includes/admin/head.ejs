@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" crossorigin="anonymous" />
+
+
+</head>
+<body>
+  
+<div class="background-1">
+  <div class="background-2"> 
+  <%- include('sidebar.ejs') %>
+      
+      <div class="page-content">
+          <div class="container">
+              <header>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <div class="dashboard">
+                              <div class="hide-on-mobile">
+                                  <h2>dashboard</h2>
+                              </div>
+                              <div class="input hide-on-mobile">
+                                  <i class="fas fa-search"></i>
+                                  <input type="text" placeholder="Search">
+                              </div>
+                              <div class="dropDown">
+                                  <div class="hide-on-desktop">
+                                      <i class="fas fa-bars"></i>
+
+                                  </div>
+                                  <div class="hide-on-desktop">
+                                      <i class="fas fa-search Í"></i>
+                                  </div>
+                                  <i class="fas fa-bell"></i>
+                                  <i class="fas fa-cog"></i>
+                                  <i class="far fa-question-circle"></i>
+                                  <img class="img-fluid" src="../img/me.jpeg" alt="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </header>

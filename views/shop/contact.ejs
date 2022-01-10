@@ -1,0 +1,86 @@
+<%- include('../includes/home-header.ejs') %>
+</head>
+
+<body>
+    <header class="homepage">
+        <%- include('../includes/page-nav.ejs') %>
+    </header>
+
+    <!--hedear page-->
+    <%- include('../includes/page-header.ejs') %>
+
+    <section class="contact text-center pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <i class="purple-fas fas fa-map-marker-alt"></i>
+                    <h4 class="pt-4">ADDRESS</h4>
+                    <p class="fs-6 cg">13/25 New Avenue
+                        New Heaven, 45Y 73J
+                        England, <span class="fw-bold">Great Britain</span></p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <i class="purple-fas fas fa-map-marker-alt"></i>
+                    <h4 class="pt-4">CALL CENTER</h4>
+                    <p class="fs-6 cg">This number is toll free if calling from Great Britain otherwise we advise you to
+                        use
+                        the electronic form of communication.</p>
+                    <span class="fw-bold cg">+33 555 444 333</span>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <i class="purple-fas fas fa-map-marker-alt"></i>
+                    <h4 class="pt-4">ELECTRONIC SUPPORT</h4>
+                    <p class="fs-6 cg">Please feel free to write an email to us or to use our electronic ticketing
+                        system.
+                    </p>
+                    <a class=" fw-bold cgreen cgreen-h " href="">info@fakeemail.com</a> <br>
+                    <span><a class="cgreen cgreen-h fw-bold" href="">Ticketio</a> - our ticketing support
+                        platform</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form py-5">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <h2 class="fs-3 lined text-center lined-center text-uppercase mb-4">Contact form</h2>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="firstname">First Name</label>
+                            <input class="form-control" id="firstname" type="text">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="lastname">Last Name</label>
+                            <input class="form-control" id="lastname" type="text">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="emailaddress">Email Address</label>
+                            <input class="form-control" id="emailaddress" type="email">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input class="form-control" id="subject" type="text">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button class="cw">
+                                <i class="purple-fas far fa-envelope me-2"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <%- include('../includes/sponsors.ejs') %>
+    <%- include('../includes/footer.ejs') %>
