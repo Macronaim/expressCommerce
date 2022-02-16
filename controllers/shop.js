@@ -157,7 +157,7 @@ exports.getCheckout = (req, res, next) => {
       total = total.toFixed(2);
 
       // Create sessions key to use in EJS template
-      return stripe.checkout.sessions.create({
+      /*return stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         line_items: products.map((p) => {
           return {
@@ -174,15 +174,15 @@ exports.getCheckout = (req, res, next) => {
         // Generating dynamically so can use on local testing server and once deployed
         success_url: `${req.protocol}://${req.get('host')}/checkout/success`,
         cancel_url: `${req.protocol}://${req.get('host')}/checkout/cancel`,
-      });
+      });*/
     })
     .then((session) => {
       res.render('shop/checkout', {
         path: '/checkout',
         pageTitle: 'Checkout',
         products,
-        totalSum: total,
-        sessionId: session.id,
+        //totalSum: total,
+        //sessionId: session.id,
       });
     })
     .catch((err) => {
